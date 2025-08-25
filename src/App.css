@@ -1,0 +1,55 @@
+/* Full-screen optimizations */
+#root {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Custom animations */
+@keyframes pulse-icon {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.animate-pulse-icon {
+  animation: pulse-icon 2s ease-in-out infinite;
+}
+
+/* Ensure text is always readable */
+.status-text {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Smooth transitions */
+.status-transition {
+  transition: all 0.5s ease-in-out;
+}
+
+/* Responsive text sizing */
+@media (max-width: 768px) {
+  .status-title {
+    font-size: 3rem;
+  }
+
+  .status-time {
+    font-size: 2rem;
+  }
+}
+
+/* Full screen button animations */
+.settings-button {
+  transition: all 0.3s ease;
+}
+
+.settings-button:hover {
+  transform: scale(1.1);
+}
