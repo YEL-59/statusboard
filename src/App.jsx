@@ -71,7 +71,7 @@ const statusOptions = [
   },
   {
     id: 'home',
-    label: 'Working from Home',
+    label: ' Go To Prayer ',
     icon: Home,
     color: 'bg-gradient-to-br from-green-500 to-green-700',
     textColor: 'text-white',
